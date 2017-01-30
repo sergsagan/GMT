@@ -17,14 +17,22 @@
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
 
+
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
 </head>
 <body>
-
-//= template/header.html
+<div class="wrapper">
+    //= template/header.html
+    <div id="video-container" class="video-overlay">
+        <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+            <source src="img/video/mainpage_RU_video.mp4"></source>
+        </video>
+    </div>
+    <div class="empty"></div>
+</div>
 //= template/footer.html
 
     <script defer src="js/vendor.js"></script>

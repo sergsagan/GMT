@@ -29,7 +29,7 @@ var gulp = require('gulp'),
 var src = {
         js: ['./src/js/**/*.js'],
         sass: ['./src/sass/main.{scss,sass}'],
-        images: ['./src/img/**/*.*', './src/img/icons/*.svg', './src/sass/img/*.svg', '!./src/img/icons/sprites/*.svg'],
+        images: ['./src/img/**/*.*', './src/img/icons/*.svg', './src/img/video/*.mp4', './src/sass/img/*.svg', '!./src/img/icons/sprites/*.svg'],
         sprites: ['./src/img/icons/sprites/*.svg'],
         fonts: ['./src/fonts/**/*.*'],
         html: ['./src/*.html']
