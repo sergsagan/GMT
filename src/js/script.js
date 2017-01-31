@@ -15,9 +15,9 @@ $(function() {
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
 	
-	$('nav li a').click(function () {
-		$('nav li').removeClass('active');
-		$(this).parent().addClass('active');
+	$('ul li a').click(function () {
+		$('ul li a').removeClass('active');
+		$(this).addClass('active');
 		return true;
 	});
 	
@@ -133,25 +133,25 @@ $(function() {
 		ts = new Date( today.getFullYear(), today.getMonth(), today.getDate() + 7),
 		newYear = true;
 	
-	$('#countdown').countdown({
-		timestamp	: ts,
-		callback	: function(days, hours, minutes, seconds){
-			
-			var message = "";
-			
-			message += days + " <i>дней</i> " + ( days==1 ? '':'' ) + "";
-			message += hours + "" + ( hours==1 ? '':':' ) + "";
-			message += minutes + "" + ( minutes==1 ? '':':' ) + "";
-			message += seconds + " " + ( seconds==1 ? '':' ' ) + " ";
-			
-			if(newYear){
-				message += "";
-			}
-			else {
-				message += "";
-			}
-		}
-	});
+	// $('#countdown').countdown({
+	// 	timestamp	: ts,
+	// 	callback	: function(days, hours, minutes, seconds){
+	//
+	// 		var message = "";
+	//
+	// 		message += days + " <i>дней</i> " + ( days==1 ? '':'' ) + "";
+	// 		message += hours + "" + ( hours==1 ? '':':' ) + "";
+	// 		message += minutes + "" + ( minutes==1 ? '':':' ) + "";
+	// 		message += seconds + " " + ( seconds==1 ? '':' ' ) + " ";
+	//
+	// 		if(newYear){
+	// 			message += "";
+	// 		}
+	// 		else {
+	// 			message += "";
+	// 		}
+	// 	}
+	// });
 
     
     //Аякс отправка форм
